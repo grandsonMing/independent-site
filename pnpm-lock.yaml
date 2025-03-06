@@ -24,8 +24,8 @@ importers:
         specifier: ^18.0.4
         version: 18.19.79
       '@vueuse/components':
-        specifier: ^8.9.3
-        version: 8.9.4(vue@3.5.13(typescript@4.9.5))
+        specifier: ^12.8.2
+        version: 12.8.2(typescript@4.9.5)
       '@vueuse/core':
         specifier: ^8.9.3
         version: 8.9.4(vue@3.5.13(typescript@4.9.5))
@@ -863,6 +863,9 @@ packages:
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
+  '@types/web-bluetooth@0.0.21':
+    resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
+
   '@vitejs/plugin-vue@3.2.0':
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -916,11 +919,14 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-  '@vueuse/components@8.9.4':
-    resolution: {integrity: sha512-PYbt9DxIvC4kx1vnF6kR/VYq8wou9xBf29rG/5u8vWCtER8uuYUsxBrSTRqNNQaevP70cDrEvDYJSSIphFM2/w==}
+  '@vueuse/components@12.8.2':
+    resolution: {integrity: sha512-Nj27u1KsDWzoTthlChzVndJ9g0sW5APCXO3EJkSxlG11nN/ANTUlPPeoJOFvtbdDRnvsMJalboJyE0rRyg7yNg==}
 
   '@vueuse/core@10.11.1':
     resolution: {integrity: sha512-guoy26JQktXPcz+0n3GukWIy/JDNKti9v6VEMu6kV2sYBsWuGiTU8OWdg+ADfUbHg3/3DlqySDe7JmdHrktiww==}
+
+  '@vueuse/core@12.8.2':
+    resolution: {integrity: sha512-HbvCmZdzAu3VGi/pWYm5Ut+Kd9mn1ZHnn4L5G8kOQTPs/IwIAmJoBrmYk2ckLArgMXZj0AW3n5CAejLUO+PhdQ==}
 
   '@vueuse/core@8.9.4':
     resolution: {integrity: sha512-B/Mdj9TK1peFyWaPof+Zf/mP9XuGAngaJZBwPaXBvU3aCTZlx3ltlrFFFyMV4iGBwsjSCeUCgZrtkEj9dS2Y3Q==}
@@ -941,11 +947,17 @@ packages:
   '@vueuse/metadata@10.11.1':
     resolution: {integrity: sha512-IGa5FXd003Ug1qAZmyE8wF3sJ81xGLSqTqtQ6jaVfkeZ4i5kS2mwQF61yhVqojRnenVew5PldLyRgvdl4YYuSw==}
 
+  '@vueuse/metadata@12.8.2':
+    resolution: {integrity: sha512-rAyLGEuoBJ/Il5AmFHiziCPdQzRt88VxR+Y/A/QhJ1EWtWqPBBAxTAFaSkviwEuOEZNtW8pvkPgoCZQ+HxqW1A==}
+
   '@vueuse/metadata@8.9.4':
     resolution: {integrity: sha512-IwSfzH80bnJMzqhaapqJl9JRIiyQU0zsRGEgnxN6jhq7992cPUJIRfV+JHRIZXjYqbwt07E1gTEp0R0zPJ1aqw==}
 
   '@vueuse/shared@10.11.1':
     resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
+
+  '@vueuse/shared@12.8.2':
+    resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
 
   '@vueuse/shared@8.9.4':
     resolution: {integrity: sha512-wt+T30c4K6dGRMVqPddexEVLa28YwxW5OFIPmzUHICjphfAuBFTTdDoyqREZNDOFJZ44ARH1WWQNCUK8koJ+Ag==}
@@ -996,6 +1008,11 @@ packages:
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -4041,7 +4058,7 @@ snapshots:
     dependencies:
       '@intlify/message-compiler': 9.3.0-beta.20
       '@intlify/shared': 9.3.0-beta.20
-      acorn: 8.14.0
+      acorn: 8.14.1
       escodegen: 2.1.0
       estree-walker: 2.0.2
       jsonc-eslint-parser: 1.4.1
@@ -4254,6 +4271,8 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
+  '@types/web-bluetooth@0.0.21': {}
+
   '@vitejs/plugin-vue@3.2.0(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue@3.5.13(typescript@4.9.5))':
     dependencies:
       vite: 3.2.11(@types/node@18.19.79)(terser@5.39.0)
@@ -4337,14 +4356,13 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vueuse/components@8.9.4(vue@3.5.13(typescript@4.9.5))':
+  '@vueuse/components@12.8.2(typescript@4.9.5)':
     dependencies:
-      '@vueuse/core': 8.9.4(vue@3.5.13(typescript@4.9.5))
-      '@vueuse/shared': 8.9.4(vue@3.5.13(typescript@4.9.5))
-      vue-demi: 0.14.10(vue@3.5.13(typescript@4.9.5))
+      '@vueuse/core': 12.8.2(typescript@4.9.5)
+      '@vueuse/shared': 12.8.2(typescript@4.9.5)
+      vue: 3.5.13(typescript@4.9.5)
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - typescript
 
   '@vueuse/core@10.11.1(vue@3.5.13(typescript@4.9.5))':
     dependencies:
@@ -4355,6 +4373,15 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@vueuse/core@12.8.2(typescript@4.9.5)':
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 12.8.2
+      '@vueuse/shared': 12.8.2(typescript@4.9.5)
+      vue: 3.5.13(typescript@4.9.5)
+    transitivePeerDependencies:
+      - typescript
 
   '@vueuse/core@8.9.4(vue@3.5.13(typescript@4.9.5))':
     dependencies:
@@ -4374,6 +4401,8 @@ snapshots:
 
   '@vueuse/metadata@10.11.1': {}
 
+  '@vueuse/metadata@12.8.2': {}
+
   '@vueuse/metadata@8.9.4': {}
 
   '@vueuse/shared@10.11.1(vue@3.5.13(typescript@4.9.5))':
@@ -4382,6 +4411,12 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@vueuse/shared@12.8.2(typescript@4.9.5)':
+    dependencies:
+      vue: 3.5.13(typescript@4.9.5)
+    transitivePeerDependencies:
+      - typescript
 
   '@vueuse/shared@8.9.4(vue@3.5.13(typescript@4.9.5))':
     dependencies:
@@ -4415,7 +4450,7 @@ snapshots:
 
   acorn-globals@7.0.1:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       acorn-walk: 8.3.4
 
   acorn-jsx@5.3.2(acorn@7.4.1):
@@ -4424,11 +4459,13 @@ snapshots:
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
 
   acorn@7.4.1: {}
 
   acorn@8.14.0: {}
+
+  acorn@8.14.1: {}
 
   agent-base@6.0.2:
     dependencies:
@@ -5715,14 +5752,14 @@ snapshots:
 
   mlly@0.5.17:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       pathe: 1.1.2
       pkg-types: 1.3.1
       ufo: 1.5.4
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.5.4
@@ -6332,7 +6369,7 @@ snapshots:
 
   strip-literal@0.4.2:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
 
   sucrase@3.35.0:
     dependencies:
@@ -6393,7 +6430,7 @@ snapshots:
   terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.0
+      acorn: 8.14.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
