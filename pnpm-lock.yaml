@@ -64,8 +64,8 @@ importers:
         specifier: ^2.1.78
         version: 2.2.313
       '@intlify/vite-plugin-vue-i18n':
-        specifier: ^5.0.0
-        version: 5.0.1(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))
+        specifier: ^7.0.0
+        version: 7.0.0(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))
       '@vitejs/plugin-vue':
         specifier: ^3.0.0
         version: 3.2.0(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue@3.5.13(typescript@4.9.5))
@@ -670,9 +670,9 @@ packages:
   '@iconify/utils@2.3.0':
     resolution: {integrity: sha512-GmQ78prtwYW6EtzXRU1rY+KwOKfz32PD7iJh6Iyqw68GiKuoZ2A6pRtzWONz5VQJbp50mEjXh/7NkumtrAgRKA==}
 
-  '@intlify/bundle-utils@7.0.0':
-    resolution: {integrity: sha512-+/RBsYWbiZcs97RyVb4mrsSrLmIMaI6evj30jI9f1psjXx+syRbf0ab63I5SIz290EOm6TE80fTst/Xjel+D9w==}
-    engines: {node: '>= 14.16'}
+  '@intlify/bundle-utils@3.4.0':
+    resolution: {integrity: sha512-2UQkqiSAOSPEHMGWlybqWm4G2K0X+FyYho5AwXz6QklSX1EY5EDmOSxZmwscn2qmKBnp6OYsme5kUrnN9xrWzQ==}
+    engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
       vue-i18n: '*'
@@ -686,12 +686,12 @@ packages:
     resolution: {integrity: sha512-DZyQ4Hk22sC81MP4qiCDuU+LdaYW91A6lCjq8AWPvY3+mGMzhGDfOCzvyR6YBQxtlPjFqMoFk9ylnNYRAQwXtQ==}
     engines: {node: '>= 16'}
 
-  '@intlify/message-compiler@9.14.2':
-    resolution: {integrity: sha512-YsKKuV4Qv4wrLNsvgWbTf0E40uRv+Qiw1BeLQ0LAxifQuhiMe+hfTIzOMdWj/ZpnTDj4RSZtkXjJM7JDiiB5LQ==}
+  '@intlify/message-compiler@11.0.0-rc.1':
+    resolution: {integrity: sha512-TGw2uBfuTFTegZf/BHtUQBEKxl7Q/dVGLoqRIdw8lFsp9g/53sYn5iD+0HxIzdYjbWL6BTJMXCPUHp9PxDTRPw==}
     engines: {node: '>= 16'}
 
-  '@intlify/message-compiler@9.3.0-beta.20':
-    resolution: {integrity: sha512-hwqQXyTnDzAVZ300SU31jO0+3OJbpOdfVU6iBkrmNpS7t2HRnVACo0EwcEXzJa++4EVDreqz5OeqJbt+PeSGGA==}
+  '@intlify/message-compiler@9.14.2':
+    resolution: {integrity: sha512-YsKKuV4Qv4wrLNsvgWbTf0E40uRv+Qiw1BeLQ0LAxifQuhiMe+hfTIzOMdWj/ZpnTDj4RSZtkXjJM7JDiiB5LQ==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@11.0.0-rc.1':
@@ -702,13 +702,10 @@ packages:
     resolution: {integrity: sha512-uRAHAxYPeF+G5DBIboKpPgC/Waecd4Jz8ihtkpJQD5ycb5PwXp0k/+hBGl5dAjwF7w+l74kz/PKA8r8OK//RUw==}
     engines: {node: '>= 16'}
 
-  '@intlify/shared@9.3.0-beta.20':
-    resolution: {integrity: sha512-RucSPqh8O9FFxlYUysQTerSw0b9HIRpyoN1Zjogpm0qLiHK+lBNSa5sh1nCJ4wSsNcjphzgpLQCyR60GZlRV8g==}
-    engines: {node: '>= 16'}
-
-  '@intlify/vite-plugin-vue-i18n@5.0.1':
-    resolution: {integrity: sha512-+LAUdm5PxGtLrUYgD2Wg9SINmLmhZqrcTnzccfqopca5NvaXWOPnQR4cQOkn82qLuyjWdCYC1BoqMHWBWX/MyQ==}
+  '@intlify/vite-plugin-vue-i18n@7.0.0':
+    resolution: {integrity: sha512-2TbDOQ8XD+vkc0s5OFmr+IY/k4mYMC7pzvx0xGQn+cU/ev314+yi7Z7N7rWcBgiYk1WOUalbGSo3d4nJDxOOyw==}
     engines: {node: '>= 14.6'}
+    deprecated: This plugin support until Vite 3. If you would like to use on Vite 4, please use @intlify/unplugin-vue-i18n
     peerDependencies:
       petite-vue-i18n: '*'
       vite: ^2.9.0 || ^3.0.0
@@ -996,6 +993,11 @@ packages:
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -4037,16 +4039,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@intlify/bundle-utils@7.0.0(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))':
+  '@intlify/bundle-utils@3.4.0(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))':
     dependencies:
-      '@intlify/message-compiler': 9.3.0-beta.20
-      '@intlify/shared': 9.3.0-beta.20
-      acorn: 8.14.0
-      escodegen: 2.1.0
-      estree-walker: 2.0.2
+      '@intlify/message-compiler': 11.0.0-rc.1
+      '@intlify/shared': 11.0.0-rc.1
       jsonc-eslint-parser: 1.4.1
-      magic-string: 0.30.17
-      mlly: 1.7.4
       source-map: 0.6.1
       yaml-eslint-parser: 0.3.2
     optionalDependencies:
@@ -4057,25 +4054,23 @@ snapshots:
       '@intlify/message-compiler': 9.14.2
       '@intlify/shared': 9.14.2
 
+  '@intlify/message-compiler@11.0.0-rc.1':
+    dependencies:
+      '@intlify/shared': 11.0.0-rc.1
+      source-map-js: 1.2.1
+
   '@intlify/message-compiler@9.14.2':
     dependencies:
       '@intlify/shared': 9.14.2
-      source-map-js: 1.2.1
-
-  '@intlify/message-compiler@9.3.0-beta.20':
-    dependencies:
-      '@intlify/shared': 9.3.0-beta.20
       source-map-js: 1.2.1
 
   '@intlify/shared@11.0.0-rc.1': {}
 
   '@intlify/shared@9.14.2': {}
 
-  '@intlify/shared@9.3.0-beta.20': {}
-
-  '@intlify/vite-plugin-vue-i18n@5.0.1(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))':
+  '@intlify/vite-plugin-vue-i18n@7.0.0(vite@3.2.11(@types/node@18.19.79)(terser@5.39.0))(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))':
     dependencies:
-      '@intlify/bundle-utils': 7.0.0(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))
+      '@intlify/bundle-utils': 3.4.0(vue-i18n@9.14.2(vue@3.5.13(typescript@4.9.5)))
       '@intlify/shared': 11.0.0-rc.1
       '@rollup/pluginutils': 4.2.1
       debug: 4.4.0
@@ -4424,11 +4419,13 @@ snapshots:
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
 
   acorn@7.4.1: {}
 
   acorn@8.14.0: {}
+
+  acorn@8.14.1: {}
 
   agent-base@6.0.2:
     dependencies:
@@ -6393,7 +6390,7 @@ snapshots:
   terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.0
+      acorn: 8.14.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
